@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Dilatasi Waktu</string>
+    <string-array name="time_unit">
+        <item>detik</item>
+        <item>menit</item>
+        <item>jam</item>
+        <item>hari</item>
+        <item>minggu</item>
+        <item>bulan</item>
+        <item>tahun</item>
+    </string-array>
+
+    <string name="penjelasan">Penjelasan</string>
+    <string name="hitung">Hitung Dilatasi Waktu</string>
+    <string name="deskripsi">Penyusutan Waktu Yang Dialami Objek Yang Bergerak Mendekati Kecepatan Cahaya</string>
+    <string name="contoh">Contoh Kasus</string>
+    <string name="kecepatan">Kecepatan [0 – 299.792]</string>
+    <string name="kecepatan_des">Kecepatan Objek Yang Bergerak</string>
+    <string name="km">km/s</string>
+    <string name="waktu">Waktu </string>
+    <string name="waktu_des">Lamanya Waktu Objek Yang Bergerak</string>
+    <string name="dilatasi_waktu">Dilatasi Waktu</string>
+</resources>

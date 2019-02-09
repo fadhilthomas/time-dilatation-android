@@ -1,0 +1,275 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAbu">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/ic_bg"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="@string/contoh"
+            android:onClick="contoh"
+            android:textSize="12sp"
+            android:id="@+id/btEg"
+            android:background="@drawable/hint_background"
+            android:textColor="@color/colorPutih"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dilatasi_waktu"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/btEg"
+            android:textColor="@color/colorPutih"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvJudul"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSubJudul"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deskripsi"
+                    android:textColor="@color/colorPutih"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/llVelocity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@color/colorPutih"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+
+                            <TextView
+                                android:id="@+id/tvInputSpeed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/kecepatan"
+                                android:textColor="@color/colorHitam2"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvInputDeskSpeed"
+                                android:layout_below="@+id/tvInputSpeed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/kecepatan_des"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/colorInfo"
+                                android:textSize="12sp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/tvInputDeskSpeed"
+                                android:layout_marginTop="10dp">
+
+                                <EditText
+                                    android:id="@+id/etVelocity"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textSize="24sp"
+                                    android:textColor="@color/colorHitam2"
+                                    android:background="@drawable/garis"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:hint="0" />
+
+                                <TextView
+                                    android:layout_weight="2"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/km"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/colorHitam2"
+                                    android:textSize="16sp"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@color/colorPutih"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+
+                            <TextView
+                                android:id="@+id/tvInputTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/waktu"
+                                android:textColor="@color/colorHitam2"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvInputDeskTime"
+                                android:layout_below="@+id/tvInputTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/waktu_des"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/colorInfo"
+                                android:textSize="12sp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/tvInputDeskTime"
+                                android:layout_marginTop="10dp">
+
+                                <EditText
+                                    android:id="@+id/etTime"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textSize="24sp"
+                                    android:textColor="@color/colorHitam2"
+                                    android:background="@drawable/garis"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:hint="0" />
+
+                                <Spinner
+                                    android:layout_weight="2"
+                                    android:layout_width="match_parent"
+                                    android:background="@drawable/garis"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="10dp"
+                                    android:entries="@array/time_unit"
+                                    android:pointerIcon="arrow"
+                                    android:layout_marginTop="-3dp"
+                                    android:spinnerMode="dialog"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp">
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/hitung"
+                        android:textSize="16sp"
+                        android:background="@drawable/rounded_bg"
+                        android:textColor="@color/colorPutih"
+                        android:onClick="hitung"
+                        android:elevation="5dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <Button
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/penjelasan"
+                        android:textSize="16sp"
+                        android:elevation="5dp"
+                        android:background="@drawable/rounded_bg_2"
+                        android:textColor="@color/colorPutih"
+                        android:onClick="penjelasan"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
